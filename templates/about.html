@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Website - About</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/app.css') }}"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>My Website - About</title>
-</head>
-
-<body>
-  <h1>Tashyn Wallace</h1>
-  <p>I am a computer science student from Jamaica interested in developing modern web and mobile applications. For
-    leisure, I like to research on multiple topics, watch documentaries and sports. I am also a big fan of vehicles of
-    all types, whether sports cars, trucks or buses</p>
-</body>
-
+  <body>
+    <h1>Tashyn Wallace</h1>
+    <p>
+      I am a computer science student from Jamaica interested in developing
+      modern web and mobile applications. For leisure, I like to research on
+      multiple topics, watch documentaries and sports. I am also a big fan of
+      vehicles of all types, whether sports cars, trucks or buses
+    </p>
+    <img src="{{ url_for('static', filename='uwi-logo.png') }}" alt="UWI logo" />
+  </body>
 </html>
